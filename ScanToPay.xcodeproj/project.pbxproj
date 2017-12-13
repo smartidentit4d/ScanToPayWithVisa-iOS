@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C2C5931BDAB46C8839ECFEE /* Pods_ScanToPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F407123FCECC8DDC0E65B5 /* Pods_ScanToPay.framework */; };
+		E25E26241FE0C61C000976F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E26231FE0C61C000976F8 /* AppDelegate.swift */; };
+		E25E26291FE0C61C000976F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25E26271FE0C61C000976F8 /* Main.storyboard */; };
+		E25E262B1FE0C61C000976F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E25E262A1FE0C61C000976F8 /* Assets.xcassets */; };
+		E25E262E1FE0C61C000976F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25E262C1FE0C61C000976F8 /* LaunchScreen.storyboard */; };
+		E25E26391FE0C61D000976F8 /* ScanToPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E26381FE0C61D000976F8 /* ScanToPayTests.swift */; };
+		E25E26441FE0C61D000976F8 /* ScanToPayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E26431FE0C61D000976F8 /* ScanToPayUITests.swift */; };
+		E25E26551FE0C7B6000976F8 /* MVisaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25E26531FE0C7B6000976F8 /* MVisaSDK.framework */; };
+		E25E26571FE0CC01000976F8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E26561FE0CC01000976F8 /* MainViewController.swift */; };
+		E25E26581FE0CD05000976F8 /* MVisaMerchantSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25E26521FE0C7B6000976F8 /* MVisaMerchantSDK.framework */; };
+		E25E26591FE0CD05000976F8 /* MVisaMerchantSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E25E26521FE0C7B6000976F8 /* MVisaMerchantSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E25E265B1FE0CD05000976F8 /* MVisaSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E25E26531FE0C7B6000976F8 /* MVisaSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E25E26611FE0CEDD000976F8 /* MerchantHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E265E1FE0CEDD000976F8 /* MerchantHelper.swift */; };
+		E25E26621FE0CEDD000976F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E265F1FE0CEDD000976F8 /* Constants.swift */; };
+		E25E26631FE0CEDD000976F8 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E26601FE0CEDD000976F8 /* Helper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E25E26351FE0C61D000976F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25E26181FE0C61C000976F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E25E261F1FE0C61C000976F8;
+			remoteInfo = ScanToPay;
+		};
+		E25E26401FE0C61D000976F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25E26181FE0C61C000976F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E25E261F1FE0C61C000976F8;
+			remoteInfo = ScanToPay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E25E265C1FE0CD05000976F8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E25E265B1FE0CD05000976F8 /* MVisaSDK.framework in Embed Frameworks */,
+				E25E26591FE0CD05000976F8 /* MVisaMerchantSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		18F407123FCECC8DDC0E65B5 /* Pods_ScanToPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanToPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DB65B43982DA0D0776F1B60 /* Pods-ScanToPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanToPay.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScanToPay/Pods-ScanToPay.release.xcconfig"; sourceTree = "<group>"; };
+		E25E26201FE0C61C000976F8 /* ScanToPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanToPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25E26231FE0C61C000976F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E25E26281FE0C61C000976F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E25E262A1FE0C61C000976F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E25E262D1FE0C61C000976F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E25E262F1FE0C61C000976F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E25E26341FE0C61D000976F8 /* ScanToPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanToPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25E26381FE0C61D000976F8 /* ScanToPayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanToPayTests.swift; sourceTree = "<group>"; };
+		E25E263A1FE0C61D000976F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E25E263F1FE0C61D000976F8 /* ScanToPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanToPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25E26431FE0C61D000976F8 /* ScanToPayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanToPayUITests.swift; sourceTree = "<group>"; };
+		E25E26451FE0C61D000976F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E25E26521FE0C7B6000976F8 /* MVisaMerchantSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVisaMerchantSDK.framework; sourceTree = "<group>"; };
+		E25E26531FE0C7B6000976F8 /* MVisaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVisaSDK.framework; sourceTree = "<group>"; };
+		E25E26561FE0CC01000976F8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E25E265E1FE0CEDD000976F8 /* MerchantHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MerchantHelper.swift; sourceTree = "<group>"; };
+		E25E265F1FE0CEDD000976F8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E25E26601FE0CEDD000976F8 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		EAE87970FF1591305F56A2AC /* Pods-ScanToPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanToPay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScanToPay/Pods-ScanToPay.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E25E261D1FE0C61C000976F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25E26551FE0C7B6000976F8 /* MVisaSDK.framework in Frameworks */,
+				E25E26581FE0CD05000976F8 /* MVisaMerchantSDK.framework in Frameworks */,
+				4C2C5931BDAB46C8839ECFEE /* Pods_ScanToPay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25E26311FE0C61D000976F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25E263C1FE0C61D000976F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD6CAC77272352E51682E416 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAE87970FF1591305F56A2AC /* Pods-ScanToPay.debug.xcconfig */,
+				8DB65B43982DA0D0776F1B60 /* Pods-ScanToPay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E25E26171FE0C61C000976F8 = {
+			isa = PBXGroup;
+			children = (
+				E25E26511FE0C7AD000976F8 /* Frameworks */,
+				E25E26221FE0C61C000976F8 /* ScanToPay */,
+				E25E26371FE0C61D000976F8 /* ScanToPayTests */,
+				E25E26421FE0C61D000976F8 /* ScanToPayUITests */,
+				E25E26211FE0C61C000976F8 /* Products */,
+				CD6CAC77272352E51682E416 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		E25E26211FE0C61C000976F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E25E26201FE0C61C000976F8 /* ScanToPay.app */,
+				E25E26341FE0C61D000976F8 /* ScanToPayTests.xctest */,
+				E25E263F1FE0C61D000976F8 /* ScanToPayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E25E26221FE0C61C000976F8 /* ScanToPay */ = {
+			isa = PBXGroup;
+			children = (
+				E25E265D1FE0CED2000976F8 /* Global */,
+				E25E26231FE0C61C000976F8 /* AppDelegate.swift */,
+				E25E26271FE0C61C000976F8 /* Main.storyboard */,
+				E25E262A1FE0C61C000976F8 /* Assets.xcassets */,
+				E25E262C1FE0C61C000976F8 /* LaunchScreen.storyboard */,
+				E25E262F1FE0C61C000976F8 /* Info.plist */,
+				E25E26561FE0CC01000976F8 /* MainViewController.swift */,
+			);
+			path = ScanToPay;
+			sourceTree = "<group>";
+		};
+		E25E26371FE0C61D000976F8 /* ScanToPayTests */ = {
+			isa = PBXGroup;
+			children = (
+				E25E26381FE0C61D000976F8 /* ScanToPayTests.swift */,
+				E25E263A1FE0C61D000976F8 /* Info.plist */,
+			);
+			path = ScanToPayTests;
+			sourceTree = "<group>";
+		};
+		E25E26421FE0C61D000976F8 /* ScanToPayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E25E26431FE0C61D000976F8 /* ScanToPayUITests.swift */,
+				E25E26451FE0C61D000976F8 /* Info.plist */,
+			);
+			path = ScanToPayUITests;
+			sourceTree = "<group>";
+		};
+		E25E26511FE0C7AD000976F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E25E26521FE0C7B6000976F8 /* MVisaMerchantSDK.framework */,
+				E25E26531FE0C7B6000976F8 /* MVisaSDK.framework */,
+				18F407123FCECC8DDC0E65B5 /* Pods_ScanToPay.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		E25E265D1FE0CED2000976F8 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				E25E265F1FE0CEDD000976F8 /* Constants.swift */,
+				E25E26601FE0CEDD000976F8 /* Helper.swift */,
+				E25E265E1FE0CEDD000976F8 /* MerchantHelper.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E25E261F1FE0C61C000976F8 /* ScanToPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E25E26481FE0C61D000976F8 /* Build configuration list for PBXNativeTarget "ScanToPay" */;
+			buildPhases = (
+				1D93BAF5C992A4C3F51BD7E1 /* [CP] Check Pods Manifest.lock */,
+				E25E261C1FE0C61C000976F8 /* Sources */,
+				E25E261D1FE0C61C000976F8 /* Frameworks */,
+				E25E261E1FE0C61C000976F8 /* Resources */,
+				E25E265C1FE0CD05000976F8 /* Embed Frameworks */,
+				F47BE28E18CEFC4BB769456B /* [CP] Embed Pods Frameworks */,
+				C5817548E0B09D8FB47D75E5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScanToPay;
+			productName = ScanToPay;
+			productReference = E25E26201FE0C61C000976F8 /* ScanToPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E25E26331FE0C61D000976F8 /* ScanToPayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E25E264B1FE0C61D000976F8 /* Build configuration list for PBXNativeTarget "ScanToPayTests" */;
+			buildPhases = (
+				E25E26301FE0C61D000976F8 /* Sources */,
+				E25E26311FE0C61D000976F8 /* Frameworks */,
+				E25E26321FE0C61D000976F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E25E26361FE0C61D000976F8 /* PBXTargetDependency */,
+			);
+			name = ScanToPayTests;
+			productName = ScanToPayTests;
+			productReference = E25E26341FE0C61D000976F8 /* ScanToPayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E25E263E1FE0C61D000976F8 /* ScanToPayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E25E264E1FE0C61D000976F8 /* Build configuration list for PBXNativeTarget "ScanToPayUITests" */;
+			buildPhases = (
+				E25E263B1FE0C61D000976F8 /* Sources */,
+				E25E263C1FE0C61D000976F8 /* Frameworks */,
+				E25E263D1FE0C61D000976F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E25E26411FE0C61D000976F8 /* PBXTargetDependency */,
+			);
+			name = ScanToPayUITests;
+			productName = ScanToPayUITests;
+			productReference = E25E263F1FE0C61D000976F8 /* ScanToPayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E25E26181FE0C61C000976F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Vivek Jayakumar";
+				TargetAttributes = {
+					E25E261F1FE0C61C000976F8 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					E25E26331FE0C61D000976F8 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E25E261F1FE0C61C000976F8;
+					};
+					E25E263E1FE0C61D000976F8 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E25E261F1FE0C61C000976F8;
+					};
+				};
+			};
+			buildConfigurationList = E25E261B1FE0C61C000976F8 /* Build configuration list for PBXProject "ScanToPay" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E25E26171FE0C61C000976F8;
+			productRefGroup = E25E26211FE0C61C000976F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E25E261F1FE0C61C000976F8 /* ScanToPay */,
+				E25E26331FE0C61D000976F8 /* ScanToPayTests */,
+				E25E263E1FE0C61D000976F8 /* ScanToPayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E25E261E1FE0C61C000976F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25E262E1FE0C61C000976F8 /* LaunchScreen.storyboard in Resources */,
+				E25E262B1FE0C61C000976F8 /* Assets.xcassets in Resources */,
+				E25E26291FE0C61C000976F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25E26321FE0C61D000976F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25E263D1FE0C61D000976F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D93BAF5C992A4C3F51BD7E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5817548E0B09D8FB47D75E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScanToPay/Pods-ScanToPay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F47BE28E18CEFC4BB769456B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScanToPay/Pods-ScanToPay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E25E261C1FE0C61C000976F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25E26241FE0C61C000976F8 /* AppDelegate.swift in Sources */,
+				E25E26611FE0CEDD000976F8 /* MerchantHelper.swift in Sources */,
+				E25E26631FE0CEDD000976F8 /* Helper.swift in Sources */,
+				E25E26571FE0CC01000976F8 /* MainViewController.swift in Sources */,
+				E25E26621FE0CEDD000976F8 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25E26301FE0C61D000976F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25E26391FE0C61D000976F8 /* ScanToPayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25E263B1FE0C61D000976F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25E26441FE0C61D000976F8 /* ScanToPayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E25E26361FE0C61D000976F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E25E261F1FE0C61C000976F8 /* ScanToPay */;
+			targetProxy = E25E26351FE0C61D000976F8 /* PBXContainerItemProxy */;
+		};
+		E25E26411FE0C61D000976F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E25E261F1FE0C61C000976F8 /* ScanToPay */;
+			targetProxy = E25E26401FE0C61D000976F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E25E26271FE0C61C000976F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E25E26281FE0C61C000976F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E25E262C1FE0C61C000976F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E25E262D1FE0C61C000976F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E25E26461FE0C61D000976F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E25E26471FE0C61D000976F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E25E26491FE0C61D000976F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAE87970FF1591305F56A2AC /* Pods-ScanToPay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJTUQP86CJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = ScanToPay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.visa.ScanToPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E25E264A1FE0C61D000976F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DB65B43982DA0D0776F1B60 /* Pods-ScanToPay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJTUQP86CJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = ScanToPay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.visa.ScanToPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E25E264C1FE0C61D000976F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJTUQP86CJ;
+				INFOPLIST_FILE = ScanToPayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.visa.ScanToPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanToPay.app/ScanToPay";
+			};
+			name = Debug;
+		};
+		E25E264D1FE0C61D000976F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJTUQP86CJ;
+				INFOPLIST_FILE = ScanToPayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.visa.ScanToPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanToPay.app/ScanToPay";
+			};
+			name = Release;
+		};
+		E25E264F1FE0C61D000976F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJTUQP86CJ;
+				INFOPLIST_FILE = ScanToPayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.visa.ScanToPayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScanToPay;
+			};
+			name = Debug;
+		};
+		E25E26501FE0C61D000976F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XJTUQP86CJ;
+				INFOPLIST_FILE = ScanToPayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.visa.ScanToPayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScanToPay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E25E261B1FE0C61C000976F8 /* Build configuration list for PBXProject "ScanToPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25E26461FE0C61D000976F8 /* Debug */,
+				E25E26471FE0C61D000976F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E25E26481FE0C61D000976F8 /* Build configuration list for PBXNativeTarget "ScanToPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25E26491FE0C61D000976F8 /* Debug */,
+				E25E264A1FE0C61D000976F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E25E264B1FE0C61D000976F8 /* Build configuration list for PBXNativeTarget "ScanToPayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25E264C1FE0C61D000976F8 /* Debug */,
+				E25E264D1FE0C61D000976F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E25E264E1FE0C61D000976F8 /* Build configuration list for PBXNativeTarget "ScanToPayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25E264F1FE0C61D000976F8 /* Debug */,
+				E25E26501FE0C61D000976F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E25E26181FE0C61C000976F8 /* Project object */;
+}
