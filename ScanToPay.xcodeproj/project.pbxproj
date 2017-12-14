@@ -15,7 +15,7 @@
 		E25E26391FE0C61D000976F8 /* ScanToPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E26381FE0C61D000976F8 /* ScanToPayTests.swift */; };
 		E25E26441FE0C61D000976F8 /* ScanToPayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E26431FE0C61D000976F8 /* ScanToPayUITests.swift */; };
 		E25E26551FE0C7B6000976F8 /* MVisaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25E26531FE0C7B6000976F8 /* MVisaSDK.framework */; };
-		E25E26571FE0CC01000976F8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E26561FE0CC01000976F8 /* MainViewController.swift */; };
+		E25E26571FE0CC01000976F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E26561FE0CC01000976F8 /* ViewController.swift */; };
 		E25E26581FE0CD05000976F8 /* MVisaMerchantSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25E26521FE0C7B6000976F8 /* MVisaMerchantSDK.framework */; };
 		E25E26591FE0CD05000976F8 /* MVisaMerchantSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E25E26521FE0C7B6000976F8 /* MVisaMerchantSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E25E265B1FE0CD05000976F8 /* MVisaSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E25E26531FE0C7B6000976F8 /* MVisaSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -73,7 +73,7 @@
 		E25E26451FE0C61D000976F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E25E26521FE0C7B6000976F8 /* MVisaMerchantSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVisaMerchantSDK.framework; sourceTree = "<group>"; };
 		E25E26531FE0C7B6000976F8 /* MVisaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVisaSDK.framework; sourceTree = "<group>"; };
-		E25E26561FE0CC01000976F8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E25E26561FE0CC01000976F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E25E265E1FE0CEDD000976F8 /* MerchantHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MerchantHelper.swift; sourceTree = "<group>"; };
 		E25E265F1FE0CEDD000976F8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E25E26601FE0CEDD000976F8 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 				E25E262A1FE0C61C000976F8 /* Assets.xcassets */,
 				E25E262C1FE0C61C000976F8 /* LaunchScreen.storyboard */,
 				E25E262F1FE0C61C000976F8 /* Info.plist */,
-				E25E26561FE0CC01000976F8 /* MainViewController.swift */,
+				E25E26561FE0CC01000976F8 /* ViewController.swift */,
 			);
 			path = ScanToPay;
 			sourceTree = "<group>";
@@ -380,7 +380,7 @@
 				E25E26241FE0C61C000976F8 /* AppDelegate.swift in Sources */,
 				E25E26611FE0CEDD000976F8 /* MerchantHelper.swift in Sources */,
 				E25E26631FE0CEDD000976F8 /* Helper.swift in Sources */,
-				E25E26571FE0CC01000976F8 /* MainViewController.swift in Sources */,
+				E25E26571FE0CC01000976F8 /* ViewController.swift in Sources */,
 				E25E26621FE0CEDD000976F8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

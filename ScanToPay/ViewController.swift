@@ -10,14 +10,14 @@ import UIKit
 import MVisaSDK
 import Alamofire
 
-class MainViewController: UITableViewController {
+class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
 
-extension MainViewController: MVisaPayMerchantDelegate {
+extension ViewController: MVisaPayMerchantDelegate {
 
     @IBAction func initiateMVisaSDKPayMerchantFlow() {
         print("Initiating MVisa Pay Merchant flow")
@@ -56,7 +56,7 @@ extension MainViewController: MVisaPayMerchantDelegate {
         print(responseStr)
 
         let merchant = [
-            "acquiringBin": payMerchantResponse?.mVisaMerchantPan!,
+            "acquiringBin": "xxxxxx",
             "city": payMerchantResponse?.cityName!,
             "countryCode": payMerchantResponse?.countryCode!,
             "pan": payMerchantResponse?.mVisaMerchantPan!,
@@ -71,7 +71,7 @@ extension MainViewController: MVisaPayMerchantDelegate {
 
         let parameters = ["merchant": merchant, "transaction": transaction]
 
-        Alamofire.request(Constants.payMerchantEndpoint,  method: .post, parameters: parameters, encoding: JSONEncoding.default)
+        Alamofire.request(Constants.payMerchantEndpoint, method: .post, parameters: parameters, encoding: JSONEncoding.default)
             .responseJSON { response in
                 debugPrint(response)
             }

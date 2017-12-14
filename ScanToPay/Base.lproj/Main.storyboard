@@ -11,7 +11,7 @@
         <!--SCAN TO PAY-->
         <scene sceneID="NxQ-FW-C8i">
             <objects>
-                <tableViewController id="GPg-XY-Ihy" customClass="MainViewController" customModule="ScanToPay" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="GPg-XY-Ihy" customClass="ViewController" customModule="ScanToPay" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="e3P-7z-Jov">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +36,6 @@
                                                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QN-Nf-Ib9">
                                                     <rect key="frame" x="16" y="6" width="329" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
                                                     <connections>
                                                         <action selector="initiateMVisaSDKPayMerchantFlow" destination="GPg-XY-Ihy" eventType="touchUpInside" id="VzY-Rh-UOz"/>
                                                     </connections>
@@ -61,7 +60,6 @@
                                                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YX0-zz-xho">
                                                     <rect key="frame" x="16" y="6" width="332" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -79,21 +77,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5r-oN-VD2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1192.8" y="-95.802098950524751"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="y5l-kf-rUB">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uhw-rT-1kz" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bho-03-cQp">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DYk-NG-8Uj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-232" y="62.968515742128943"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zQG-9t-RWO">
