@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fcj-uP-3LN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fcj-uP-3LN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--SCAN TO PAY-->
+        <!--SCAN TO PAY WITH VISA-->
         <scene sceneID="NxQ-FW-C8i">
             <objects>
                 <tableViewController id="GPg-XY-Ihy" customClass="ViewController" customModule="ScanToPay" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,21 +16,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="t4S-sF-Bef">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="197"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="FDNB Credit Card" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45Z-u9-t1y">
+                                    <rect key="frame" x="22" y="60" width="331" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="f67-6o-oIw"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1234" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="54j-Fh-wU9">
+                                    <rect key="frame" x="22" y="132" width="331" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="3Jv-oO-bpN"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgR-fS-8Rb">
+                                    <rect key="frame" x="22" y="34" width="331" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="18" id="K5Y-8P-i2S"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Four Digits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLB-ff-bhS">
+                                    <rect key="frame" x="22" y="106" width="331" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="18" id="O0s-mP-vzY"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="KLB-ff-bhS" firstAttribute="top" secondItem="45Z-u9-t1y" secondAttribute="bottom" constant="16" id="2SC-uh-0rT"/>
+                                <constraint firstItem="54j-Fh-wU9" firstAttribute="top" secondItem="KLB-ff-bhS" secondAttribute="bottom" constant="8" id="A4e-wS-H0j"/>
+                                <constraint firstItem="qgR-fS-8Rb" firstAttribute="leading" secondItem="t4S-sF-Bef" secondAttribute="leading" constant="22" id="CRs-by-u22"/>
+                                <constraint firstItem="54j-Fh-wU9" firstAttribute="leading" secondItem="t4S-sF-Bef" secondAttribute="leading" constant="22" id="Gix-iz-1Ht"/>
+                                <constraint firstAttribute="trailing" secondItem="45Z-u9-t1y" secondAttribute="trailing" constant="22" id="KDL-4Q-5vp"/>
+                                <constraint firstAttribute="trailing" secondItem="qgR-fS-8Rb" secondAttribute="trailing" constant="22" id="Mi1-9e-vuW"/>
+                                <constraint firstAttribute="trailing" secondItem="KLB-ff-bhS" secondAttribute="trailing" constant="22" id="R9s-sr-AKf"/>
+                                <constraint firstAttribute="trailing" secondItem="54j-Fh-wU9" secondAttribute="trailing" constant="22" id="c6N-Ny-wAY"/>
+                                <constraint firstItem="KLB-ff-bhS" firstAttribute="leading" secondItem="t4S-sF-Bef" secondAttribute="leading" constant="22" id="dMW-Uy-lYX"/>
+                                <constraint firstItem="45Z-u9-t1y" firstAttribute="leading" secondItem="t4S-sF-Bef" secondAttribute="leading" constant="22" id="f5N-mZ-gRr"/>
+                                <constraint firstItem="45Z-u9-t1y" firstAttribute="top" secondItem="qgR-fS-8Rb" secondAttribute="bottom" constant="8" id="hJd-v5-J35"/>
+                                <constraint firstItem="qgR-fS-8Rb" firstAttribute="top" secondItem="t4S-sF-Bef" secondAttribute="top" constant="34" id="p52-xR-PzK"/>
+                            </constraints>
+                        </view>
                         <sections>
                             <tableViewSection id="RZJ-2D-Fy6">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="yuD-Sd-ISE" style="IBUITableViewCellStyleDefault" id="wTw-nS-C9N">
-                                        <rect key="frame" x="0.0" y="35" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="197" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wTw-nS-C9N" id="tOp-r3-12q">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Scan To Pay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yuD-Sd-ISE">
-                                                    <rect key="frame" x="16" y="0.0" width="344" height="43.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Scan To Pay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yuD-Sd-ISE">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QN-Nf-Ib9">
@@ -44,22 +101,25 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="iIk-uT-qgD" style="IBUITableViewCellStyleDefault" id="hQH-rd-KK5">
-                                        <rect key="frame" x="0.0" y="79" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="241" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hQH-rd-KK5" id="fLL-KE-KzN">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Request Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iIk-uT-qgD">
-                                                    <rect key="frame" x="16" y="0.0" width="344" height="43.5"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Request Payment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iIk-uT-qgD">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YX0-zz-xho">
                                                     <rect key="frame" x="16" y="6" width="332" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="initiateMVisaMerchantSDKRequestPaymentFlow" destination="GPg-XY-Ihy" eventType="touchUpInside" id="G30-2X-D3z"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -72,7 +132,11 @@
                             <outlet property="delegate" destination="GPg-XY-Ihy" id="LcA-c8-wcb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="SCAN TO PAY" id="fbo-Qu-Vpq"/>
+                    <navigationItem key="navigationItem" title="SCAN TO PAY WITH VISA" id="fbo-Qu-Vpq"/>
+                    <connections>
+                        <outlet property="cardTypeLabel" destination="45Z-u9-t1y" id="Lwa-yF-eiz"/>
+                        <outlet property="lastFourLabel" destination="54j-Fh-wU9" id="0fU-4c-LLC"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5r-oN-VD2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

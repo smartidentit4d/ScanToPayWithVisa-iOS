@@ -8,9 +8,13 @@
 
 import UIKit
 import MVisaSDK
+//import MVisaMerchantSDK
 import Alamofire
 
 class ViewController: UITableViewController {
+
+    @IBOutlet weak var cardTypeLabel: UITextField!
+    @IBOutlet weak var lastFourLabel: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,10 +30,15 @@ extension ViewController: MVisaPayMerchantDelegate {
         MVisaSDK.setupOneTimeConfiguration(onetimeConfig)
 
         // Card details for forming MVisaPayMerchantRequest
-        let card1 = MVisaCardDetails(lastFourDigits: "5678", cardType: "FDNB Platinum", issuerLogo: nil, cardArtColor: nil, cardArtOverlay: nil, networkType: .visa)
-        let card2 = MVisaCardDetails(lastFourDigits: "1357", cardType: "FDNB Credit", issuerLogo: nil, cardArtColor: UIColor.brown, cardArtOverlay: nil, networkType: .visa)
+        if  cardTypeLabel.text?.isEmpty ?? true || lastFourLabel.text?.isEmpty ?? true {
+            notifyUser("Empty Data", message: "Enter sample card information")
+            return
+        }
 
-        let cardDetails = [card1, card2]
+        // Prepare consumer card list to be used to create Pay Friend Request
+        let card1 = MVisaCardDetails(lastFourDigits: lastFourLabel.text!, cardType: cardTypeLabel.text!, issuerLogo: nil, cardArtColor: nil, cardArtOverlay: nil, networkType: .visa)
+        let cardDetails = [card1, card1]
+
         let randomIndex = Int(arc4random_uniform(UInt32(cardDetails.count)))
 
         // Forming the MVisaPayMerchantRequest
@@ -77,5 +86,21 @@ extension ViewController: MVisaPayMerchantDelegate {
             }
 
     }
+}
+
+extension UIViewController {
+    // Alert dialog to show to user
+    func notifyUser(_ title: String, message: String) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: UIAlertControllerStyle.alert)
+
+        let cancelAction = UIAlertAction(title: "OK",
+                                         style: .cancel, handler: nil)
+
+        alert.addAction(cancelAction)
+        self.present(alert, animated: true, completion: nil)
+    }
+
 }
 

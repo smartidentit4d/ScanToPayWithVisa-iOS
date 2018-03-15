@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		4C2C5931BDAB46C8839ECFEE /* Pods_ScanToPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F407123FCECC8DDC0E65B5 /* Pods_ScanToPay.framework */; };
+		E2369EF0205A25AF00222844 /* Readme.MD in Resources */ = {isa = PBXBuildFile; fileRef = E2369EEF205A25AF00222844 /* Readme.MD */; };
 		E25E26241FE0C61C000976F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E26231FE0C61C000976F8 /* AppDelegate.swift */; };
 		E25E26291FE0C61C000976F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25E26271FE0C61C000976F8 /* Main.storyboard */; };
 		E25E262B1FE0C61C000976F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E25E262A1FE0C61C000976F8 /* Assets.xcassets */; };
 		E25E262E1FE0C61C000976F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25E262C1FE0C61C000976F8 /* LaunchScreen.storyboard */; };
 		E25E26391FE0C61D000976F8 /* ScanToPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E26381FE0C61D000976F8 /* ScanToPayTests.swift */; };
 		E25E26441FE0C61D000976F8 /* ScanToPayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E26431FE0C61D000976F8 /* ScanToPayUITests.swift */; };
-		E25E26551FE0C7B6000976F8 /* MVisaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25E26531FE0C7B6000976F8 /* MVisaSDK.framework */; };
 		E25E26571FE0CC01000976F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E26561FE0CC01000976F8 /* ViewController.swift */; };
-		E25E26581FE0CD05000976F8 /* MVisaMerchantSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25E26521FE0C7B6000976F8 /* MVisaMerchantSDK.framework */; };
-		E25E26591FE0CD05000976F8 /* MVisaMerchantSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E25E26521FE0C7B6000976F8 /* MVisaMerchantSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E25E265B1FE0CD05000976F8 /* MVisaSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E25E26531FE0C7B6000976F8 /* MVisaSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E25E26611FE0CEDD000976F8 /* MerchantHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E265E1FE0CEDD000976F8 /* MerchantHelper.swift */; };
 		E25E26621FE0CEDD000976F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E265F1FE0CEDD000976F8 /* Constants.swift */; };
 		E25E26631FE0CEDD000976F8 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E26601FE0CEDD000976F8 /* Helper.swift */; };
+		E275E7302022B4DE00935090 /* MerchantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E275E72F2022B4DE00935090 /* MerchantViewController.swift */; };
+		E275E7322022B7F900935090 /* MVisaMerchantSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E275E7312022B7F900935090 /* MVisaMerchantSDK.framework */; };
+		E275E7342022B80500935090 /* MVisaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E275E7332022B80500935090 /* MVisaSDK.framework */; };
+		E275E7352022B85D00935090 /* MVisaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E275E7332022B80500935090 /* MVisaSDK.framework */; };
+		E275E7362022B85D00935090 /* MVisaSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E275E7332022B80500935090 /* MVisaSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E275E7372022B85D00935090 /* MVisaMerchantSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E275E7312022B7F900935090 /* MVisaMerchantSDK.framework */; };
+		E275E7382022B85D00935090 /* MVisaMerchantSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E275E7312022B7F900935090 /* MVisaMerchantSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +52,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E25E265B1FE0CD05000976F8 /* MVisaSDK.framework in Embed Frameworks */,
-				E25E26591FE0CD05000976F8 /* MVisaMerchantSDK.framework in Embed Frameworks */,
+				E275E7382022B85D00935090 /* MVisaMerchantSDK.framework in Embed Frameworks */,
+				E275E7362022B85D00935090 /* MVisaSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +63,7 @@
 /* Begin PBXFileReference section */
 		18F407123FCECC8DDC0E65B5 /* Pods_ScanToPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanToPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DB65B43982DA0D0776F1B60 /* Pods-ScanToPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanToPay.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScanToPay/Pods-ScanToPay.release.xcconfig"; sourceTree = "<group>"; };
+		E2369EEF205A25AF00222844 /* Readme.MD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.MD; sourceTree = "<group>"; };
 		E25E26201FE0C61C000976F8 /* ScanToPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanToPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25E26231FE0C61C000976F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E25E26281FE0C61C000976F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,12 +76,13 @@
 		E25E263F1FE0C61D000976F8 /* ScanToPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanToPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25E26431FE0C61D000976F8 /* ScanToPayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanToPayUITests.swift; sourceTree = "<group>"; };
 		E25E26451FE0C61D000976F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E25E26521FE0C7B6000976F8 /* MVisaMerchantSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVisaMerchantSDK.framework; sourceTree = "<group>"; };
-		E25E26531FE0C7B6000976F8 /* MVisaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVisaSDK.framework; sourceTree = "<group>"; };
 		E25E26561FE0CC01000976F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E25E265E1FE0CEDD000976F8 /* MerchantHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MerchantHelper.swift; sourceTree = "<group>"; };
 		E25E265F1FE0CEDD000976F8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E25E26601FE0CEDD000976F8 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		E275E72F2022B4DE00935090 /* MerchantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MerchantViewController.swift; sourceTree = "<group>"; };
+		E275E7312022B7F900935090 /* MVisaMerchantSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVisaMerchantSDK.framework; sourceTree = "<group>"; };
+		E275E7332022B80500935090 /* MVisaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MVisaSDK.framework; sourceTree = "<group>"; };
 		EAE87970FF1591305F56A2AC /* Pods-ScanToPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanToPay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScanToPay/Pods-ScanToPay.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,9 +91,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E25E26551FE0C7B6000976F8 /* MVisaSDK.framework in Frameworks */,
-				E25E26581FE0CD05000976F8 /* MVisaMerchantSDK.framework in Frameworks */,
+				E275E7352022B85D00935090 /* MVisaSDK.framework in Frameworks */,
+				E275E7322022B7F900935090 /* MVisaMerchantSDK.framework in Frameworks */,
+				E275E7342022B80500935090 /* MVisaSDK.framework in Frameworks */,
 				4C2C5931BDAB46C8839ECFEE /* Pods_ScanToPay.framework in Frameworks */,
+				E275E7372022B85D00935090 /* MVisaMerchantSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +128,7 @@
 		E25E26171FE0C61C000976F8 = {
 			isa = PBXGroup;
 			children = (
+				E2369EEF205A25AF00222844 /* Readme.MD */,
 				E25E26511FE0C7AD000976F8 /* Frameworks */,
 				E25E26221FE0C61C000976F8 /* ScanToPay */,
 				E25E26371FE0C61D000976F8 /* ScanToPayTests */,
@@ -148,6 +157,7 @@
 				E25E262A1FE0C61C000976F8 /* Assets.xcassets */,
 				E25E262C1FE0C61C000976F8 /* LaunchScreen.storyboard */,
 				E25E262F1FE0C61C000976F8 /* Info.plist */,
+				E275E72F2022B4DE00935090 /* MerchantViewController.swift */,
 				E25E26561FE0CC01000976F8 /* ViewController.swift */,
 			);
 			path = ScanToPay;
@@ -174,8 +184,8 @@
 		E25E26511FE0C7AD000976F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E25E26521FE0C7B6000976F8 /* MVisaMerchantSDK.framework */,
-				E25E26531FE0C7B6000976F8 /* MVisaSDK.framework */,
+				E275E7332022B80500935090 /* MVisaSDK.framework */,
+				E275E7312022B7F900935090 /* MVisaMerchantSDK.framework */,
 				18F407123FCECC8DDC0E65B5 /* Pods_ScanToPay.framework */,
 			);
 			path = Frameworks;
@@ -304,6 +314,7 @@
 			files = (
 				E25E262E1FE0C61C000976F8 /* LaunchScreen.storyboard in Resources */,
 				E25E262B1FE0C61C000976F8 /* Assets.xcassets in Resources */,
+				E2369EF0205A25AF00222844 /* Readme.MD in Resources */,
 				E25E26291FE0C61C000976F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +390,7 @@
 			files = (
 				E25E26241FE0C61C000976F8 /* AppDelegate.swift in Sources */,
 				E25E26611FE0CEDD000976F8 /* MerchantHelper.swift in Sources */,
+				E275E7302022B4DE00935090 /* MerchantViewController.swift in Sources */,
 				E25E26631FE0CEDD000976F8 /* Helper.swift in Sources */,
 				E25E26571FE0CC01000976F8 /* ViewController.swift in Sources */,
 				E25E26621FE0CEDD000976F8 /* Constants.swift in Sources */,
@@ -556,7 +568,7 @@
 				);
 				INFOPLIST_FILE = ScanToPay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.visa.ScanToPay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.visasg.ScanToPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -576,7 +588,7 @@
 				);
 				INFOPLIST_FILE = ScanToPay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.visa.ScanToPay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.visasg.ScanToPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
