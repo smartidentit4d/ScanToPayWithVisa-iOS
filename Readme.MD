@@ -6,10 +6,10 @@ Help enable making payment to a friend quickly, using a mobile app to transfer f
 
 ## Prerequisites
 An Apple Developer account. 
-- Apple’s Xcode, version 9 or later. 
+- A recent version of the development software for the use with such provider's devices (in this case we used The Apple iOS mobile development platform. You may choose to do otherwise 
 - A Visa Developer Platform account [Register Here].
 - A new project with Visa Direct as an API [Create here].
-- Cocoapods [Setup Instructions]
+- A dependancy manager tool to install third party libraries (in this case we used Cocoapods) 
 - The mVisa and mVisa merchant SDKs [Download Here].
 
 ## Setup
@@ -27,7 +27,7 @@ $pod install
 
 5. Open the workspace file .xcworkspace.
 
-6. Link the payMerchantEndpoint endpoint to the server endpoint. In `Constants.swift`
+6. Once you setup a server endpoint with VDP API node.js client, link the payMerchantEndpoint endpoint to the server endpoint. In `Constants.swift`
 ```swift
 static let payMerchantEndpoint: String = "YOUR_ENDPOINT"
 ```
@@ -40,12 +40,11 @@ static let payMerchantEndpoint: String = "YOUR_ENDPOINT"
 - After you've built the application, run it on a connected device.
 - Connect your smart phone to your computer.
 - Run the application with the device as the target.
-- On the main page of the app,Enter Sample information for card type and Last four digits of card 
+- On the main page of the app, enter Sample information for card type and Last four digits of card 
 - Click the Merchant QR button to view the sample QR code. Save and print it.
 - Then, tap the Scan to Pay button and scan the QR code.
 - Enter an amount and then tap Pay.
 - The amount is transferred between cards and confirmations are sent.
-
 
 
    [Register Here]: <https://developer.visa.com/portal/#users/new>
