@@ -54,8 +54,6 @@ static let payMerchantEndpoint: String = "YOUR_ENDPOINT"
    [Setup Instructions]: <https://cocoapods.org/>
 
 ## Built With
-
-- Alamofire [Github Page]
 - mVisa SDK for iOS [Download Here]
 
 ## Release History
