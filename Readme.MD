@@ -9,7 +9,7 @@ An Apple Developer account.
 - A recent version of the development software for the use with such provider's devices (in this case we used The Apple iOS mobile development platform. You may choose to do otherwise 
 - A Visa Developer Platform account [Register Here].
 - A new project with Visa Direct as an API [Create here].
-- A dependancy manager tool to install third party libraries (in this case we used Cocoapods) 
+- A dependency manager tool to install third party libraries (in this case we used Cocoapods) 
 - The mVisa and mVisa merchant SDKs [Download Here].
 
 ## Setup
