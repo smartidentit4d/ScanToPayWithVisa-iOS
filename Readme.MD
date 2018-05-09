@@ -66,8 +66,6 @@ static let payMerchantEndpoint: String = "YOUR_ENDPOINT"
 
 ## License
 
-This project is licensed under the MIT License 
-
 © Copyright 2018 Visa. All Rights Reserved.
 
 NOTICE: The software and accompanying information and documentation (together, the “Software”) remain the property of and are proprietary to Visa and its suppliers and affiliates. The Software remains protected by intellectual property rights and may be covered by U.S. and foreign patents or patent applications. The Software is licensed and not sold.
