@@ -1,5 +1,5 @@
 # Scan to Pay With Visa
-> Disclaimer: This is a reference implementation of a usecase described at ![Visa Developer Portal - Innovation Corner](http://developer.visa.com). This is not intended for production use.
+> Disclaimer: This is a reference implementation of an **Example Projects** described at [Visa Developer Center – Innovation Corner](https://developer.visa.com/innovation-corner). This is not intended for production use.
 
 Help enable making payment to a friend quickly, using a mobile app to transfer funds between an enrolled cardholder’s eligible Visa card and a friend or family member’s eligible Visa card.
 
